@@ -8,7 +8,7 @@ class WhatsappBot:
         self.grupos = ["Projeto Integrado","4° Não foi com Varalda 👌"]
         options = webdriver.ChromeOptions()
         options.add_argument('lang=pt-br')
-        self.driver = webdriver.Chrome(executable_path=r'./chromedriver')
+        self.driver = webdriver.Chrome(executable_path=r'/home/igor-felipy/Documents/python/bot')
 
     def EnviarMensagem(self):
         #<span dir="auto" title="Projeto Integrado" class="_1wjpf _3NFp9 _3FXB1">Projeto Integrado</span>
