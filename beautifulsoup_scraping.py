@@ -18,5 +18,16 @@ soup.find('div', class_ = 'small-widget').h2.text #retorna só o texto do elemen
 
 soup.find('div', class_ = 'small-widget').h2.next_element #retorna o proximo elemento dentro da tag
 
-soup.find('div', class_ = 'small-widget').h2.next_sibling.next_sibling #retorna o proximo elemento da hierarquia
+soup.find('div', class_ = 'small-widget').h2.next_sibling.next_sibling #retorna o proximo elemento da hierarquia / as vezes falha então é necessario usar 2 vezes o mesmo codigo
+
+soup.find_all('div', class_ = 'small-widget')[1] #retorna conforme a posição na lista
+
+soup.find_all('div', class_ = 'small-widget')[1].h2.text #retorna o texto de um elemento na lista 
+
+# é posivel salvar isso em uma variavel
+
+elementos = soup.find_all('div', class_ = 'small-widget')
+
+for elemento in elementos:
+    print(elemento.h2.text)
 
