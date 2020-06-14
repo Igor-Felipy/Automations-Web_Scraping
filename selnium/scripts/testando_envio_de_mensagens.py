@@ -8,9 +8,9 @@ msg = 'msg de teste de automação, por favor ignore!'
 
 driver = webdriver.Chrome('bot/selnium/scripts/chromedriver')
 driver.get(url)
-sleep(15)
+sleep(8)
 
-name = 'Projeto Integrado'
+name = 'Mãe'
 grupo = driver.find_element_by_xpath(f"//span[@title='{name}']")
 grupo.click()
 sleep(1)
@@ -21,4 +21,5 @@ sleep(1)
 texto.send_keys(msg)
 sleep(1)
 
-enviar = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]/button/span/svg/path')
+enviar = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]')
+enviar.click()
