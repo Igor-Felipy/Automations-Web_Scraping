@@ -1,3 +1,5 @@
+#Clicando em coisas
+
 from selenium import webdriver
 
 url = "https://www.ferendum.com/pt/PID410151PSD575674591"

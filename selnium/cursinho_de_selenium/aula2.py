@@ -1,3 +1,5 @@
+#Escrevendo em inoputs de texto
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 url = 'https://google.com'
